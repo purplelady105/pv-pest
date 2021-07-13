@@ -60,7 +60,7 @@
         <span class="mr-2">Call Now</span>
       </v-btn>
     </v-app-bar>
-    <v-main>
+    <v-main class="darkGrey">
       <router-view />
     </v-main>
   </v-app>

@@ -17,7 +17,8 @@ export default new Vuetify({
 				warning: '#ff5722',
 				info: '#4caf50',
 				success: '#03a9f4',
-				softGrey: '#E6E2DB'
+				softGrey: '#E6E2DB',
+				darkGrey: '#272725'
 			},
 			dark: {
 				primary: '#34495E'
