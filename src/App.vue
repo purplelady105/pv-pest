@@ -4,10 +4,12 @@
     <v-app-bar
      app
      color="primary"
+     flat
+     prominent
      dark>
       <div class="d-flex align-center">
         <router-link to="/" class="header-logo">
-          <v-img :src="require('@/assets/logo.png')" alt="PV Pest Logo" width="85" contain></v-img>
+          <v-img :src="require('@/assets/logo.png')" alt="PV Pest Logo" width="125" contain></v-img>
         </router-link>
       </div>
       <v-spacer></v-spacer>
@@ -40,27 +42,32 @@
         </v-btn>
       </router-link>
       <v-btn
+       href="https://www.instagram.com/pvpest.solutions/"
+       target="_blank"
        icon
        color="white">
         <v-icon>fab fa-fw fa-instagram</v-icon>
       </v-btn>
       <v-btn
+       href="https://www.facebook.com/pvpestsolutions"
+       target="_blank"
        icon
        color="white">
         <v-icon>fab fa-fw fa-facebook-f</v-icon>
       </v-btn>
       <v-btn
-       href="https://github.com/vuetifyjs/vuetify/releases/latest"
+       href="tel:+16024921056"
        target="_blank"
        color="accent"
        outlined
        rounded
        elevation="5"
+       class="mt-2"
        medium>
         <span class="mr-2">Call Now</span>
       </v-btn>
     </v-app-bar>
-    <v-main class="darkGrey">
+    <v-main class="mt-16 primary">
       <router-view />
     </v-main>
   </v-app>
@@ -74,3 +81,9 @@ export default {
   }),
 };
 </script>
+<style>
+a:hover {
+  text-decoration: none !important;
+  color: inherit;
+}
+</style>
