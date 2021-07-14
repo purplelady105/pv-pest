@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <font-awesome-icon icon="user-secret" />
+    <!-- <font-awesome-icon icon="user-secret" /> -->
     <v-app-bar
      app
      color="primary"
@@ -20,7 +20,7 @@
           Pay
         </v-btn>
       </router-link>
-      <router-link to="/pay">
+      <router-link to="/serviceAreas">
         <v-btn
          text
          color="softGrey">
@@ -34,7 +34,7 @@
           About
         </v-btn>
       </router-link>
-      <router-link to="/about">
+      <router-link to="/contact">
         <v-btn
          text
          color="softGrey">
@@ -70,7 +70,7 @@
       <router-view />
     </v-main>
     <v-card flat tile width="100%" class="accent white--text text-center pa-5">
-      <div class="text-h3 font-weight-bold py-6">Schedule service today!</div>
+      <div class="text-h3 font-weight-bold py-6">Schedule your service today!</div>
       <v-btn
        href="mailto:info@pvpest.com?subject=Pest Control Inquiry"
        color="white"
