@@ -1,6 +1,5 @@
 <template>
   <v-app>
-    <!-- <font-awesome-icon icon="user-secret" /> -->
     <v-app-bar
      app
      color="primary"
