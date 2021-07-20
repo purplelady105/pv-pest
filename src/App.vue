@@ -71,6 +71,17 @@
 		<v-card flat tile width="100%" class="accent white--text text-center pa-2">
 			<div class="text-h3 font-weight-bold pt-6">Schedule your service today!</div>
 			<v-btn
+			 v-if="$mq != 'mobile'"
+			 href="mailto:info@pvpest.com?subject=Pest Control Inquiry"
+			 color="white"
+			 outlined
+			 rounded
+			 elevation="5"
+			 class="my-8 pa-9">
+				<span style="font-size: 2em">Contact Us</span>
+			</v-btn>
+			<v-btn
+			 v-else
 			 href="mailto:info@pvpest.com?subject=Pest Control Inquiry"
 			 color="white"
 			 outlined
