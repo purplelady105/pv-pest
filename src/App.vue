@@ -1,73 +1,15 @@
 <template>
 	<v-app>
-		<v-app-bar
-		 app
-		 color="primary"
-		 flat
-		 prominent
-		 dark>
-			<div class="d-flex align-center">
-				<router-link to="/" class="header-logo">
-					<v-img :src="require('@/assets/logo.png')" alt="PV Pest Logo" width="125" contain></v-img>
-				</router-link>
-			</div>
-			<v-spacer></v-spacer>
-			<router-link to="/pay">
-				<v-btn
-				 text
-				 color="softGrey">
-					Pay
-				</v-btn>
-			</router-link>
-			<router-link to="/serviceAreas">
-				<v-btn
-				 text
-				 color="softGrey">
-					Service Areas
-				</v-btn>
-			</router-link>
-			<router-link to="/about">
-				<v-btn
-				 text
-				 color="softGrey">
-					About
-				</v-btn>
-			</router-link>
-			<router-link to="/contact">
-				<v-btn
-				 text
-				 color="softGrey">
-					Contact
-				</v-btn>
-			</router-link>
-			<v-btn
-			 href="https://www.instagram.com/pvpest.solutions/"
-			 target="_blank"
-			 icon
-			 color="white">
-				<v-icon>fab fa-fw fa-instagram</v-icon>
-			</v-btn>
-			<v-btn
-			 href="https://www.facebook.com/pvpestsolutions"
-			 target="_blank"
-			 icon
-			 color="white">
-				<v-icon>fab fa-fw fa-facebook-f</v-icon>
-			</v-btn>
-			<v-btn
-			 href="tel:+16024921056"
-			 color="accent"
-			 outlined
-			 rounded
-			 elevation="5"
-			 class="mt-2"
-			 medium>
-				Call Now
-			</v-btn>
-		</v-app-bar>
+		<AppBar v-if="$mq != 'mobile'" />
+		<MobileAppBar v-else />
 		<v-main class="primary">
 			<router-view />
 		</v-main>
+		<v-card flat tile width="100%" class="lime darken-3 white--text text-center pa-2">
+			<v-icon color="white" class="pt-6" size="60px">fab fa-envira</v-icon>
+			<div class="text-h3 font-weight-bold py-4">Eco-Friendly</div>
+			<div class="text-h5 pb-4">We use a combination of Environmentally Friendly and Organic products that are used in Healthcare Facilities and Schools.</div>
+		</v-card>
 		<v-card flat tile width="100%" class="accent white--text text-center pa-2">
 			<div class="text-h3 font-weight-bold pt-6">Schedule your service today!</div>
 			<v-btn
@@ -97,11 +39,15 @@
 	</v-app>
 </template>
 <script>
+import AppBar from './components/AppBar.vue'
+import MobileAppBar from './components/mobile/AppBar.vue'
 import AppFooter from './components/Footer.vue'
 import MobileFooter from './components/mobile/Footer.vue'
 export default {
 	name: 'App',
 	components: {
+		AppBar,
+		MobileAppBar,
 		AppFooter,
 		MobileFooter
 	},
