@@ -38,6 +38,35 @@
 				</v-layout>
 			</v-card-text>
 			<v-divider></v-divider>
+			<v-layout>
+				<div class="col-md-4 col-12 elevation-0">
+					<v-btn
+					 href="https://www.instagram.com/pvpest.solutions/"
+					 target="_blank"
+					 icon
+					 color="white">
+						<v-icon>fab fa-fw fa-instagram</v-icon>
+					</v-btn>
+					<v-btn
+					 href="https://www.facebook.com/pvpestsolutions"
+					 target="_blank"
+					 icon
+					 color="white">
+						<v-icon>fab fa-fw fa-facebook-f</v-icon>
+					</v-btn>
+					<v-btn
+					 href="tel:+16024921056"
+					 color="white"
+					 outlined
+					 rounded
+					 elevation="5"
+					 class="mt-2"
+					 medium>
+						Call Now
+					</v-btn>
+				</div>
+			</v-layout>
+			<v-divider></v-divider>
 			<v-card-text class="white--text">
 				{{ new Date().getFullYear() }} — <strong>PV Pest Solutions</strong>
 			</v-card-text>

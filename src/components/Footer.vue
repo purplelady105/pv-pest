@@ -25,6 +25,21 @@
 						<div class="text-h6 mt-5">
 							<a href="mailto:info@pvpest.com?subject=Pest Control Inquiry" class="text-decoration-none softGrey--text">info@pvpest.com</a><br>
 							<a href="tel:+16024921056" class="text-decoration-none softGrey--text">(602) 492-1056</a>
+							<br>
+							<v-btn
+							 href="https://www.instagram.com/pvpest.solutions/"
+							 target="_blank"
+							 icon
+							 color="softGrey">
+								<v-icon>fab fa-fw fa-instagram</v-icon>
+							</v-btn>
+							<v-btn
+							 href="https://www.facebook.com/pvpestsolutions"
+							 target="_blank"
+							 icon
+							 color="softGrey">
+								<v-icon>fab fa-fw fa-facebook-f</v-icon>
+							</v-btn>
 						</div>
 					</div>
 				</v-layout>
