@@ -17,9 +17,9 @@
 								9950 W Van Buren St Suite 125<br>
 								Avondale, AZ 85323<br><br>
 								Phone<br>
-								+1 (602) 492-1056<br><br>
+								<a href="tel:+16024921056" class="text-decoration-none white--text">+1 (602) 492-1056</a><br><br>
 								E-Mail<br>
-								info@pvpest.com
+								<a href="mailto:info@pvpest.com?subject=Pest Control Inquiry" class="text-decoration-none white--text">info@pvpest.com</a>
 							</div>
 						</v-card-text>
 					</v-flex>
@@ -42,9 +42,9 @@
 								9950 W Van Buren St Suite 125<br>
 								Avondale, AZ 85323<br><br>
 								Phone<br>
-								+1 (602) 492-1056<br><br>
+								<a href="tel:+16024921056" class="text-decoration-none white--text">+1 (602) 492-1056</a><br><br>
 								E-Mail<br>
-								info@pvpest.com
+								<a href="mailto:info@pvpest.com?subject=Pest Control Inquiry" class="text-decoration-none white--text">info@pvpest.com</a>
 							</div>
 						</v-card-text>
 					</v-flex>

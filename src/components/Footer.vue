@@ -13,11 +13,9 @@
 					<div class="col-md-4 col-12 elevation-0">
 						<div class="text-h6 font-weight-bold">Hours</div>
 						<div class="text-h6 mt-5">
-							Monday — Friday<br>7am — 5pm
+							Monday — Friday<br>8am — 4:30pm
 							<v-divider></v-divider>
-							Saturday<br>7am — 4pm
-							<v-divider></v-divider>
-							Sunday<br>Closed
+							Saturday | Sunday<br>Closed
 						</div>
 					</div>
 					<div class="col-md-4 col-12 elevation-0">

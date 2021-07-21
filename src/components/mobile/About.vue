@@ -15,7 +15,7 @@
 							<span style="font-size: 2em" class="font-weight-bold mx-auto">About Us</span>
 						</v-card-title>
 						<v-card-text class="white--text text-center px-6">
-							<span class="text-h4">PV Pest Solutions is proud to offer residential & commercial pest control services to the residents of Goodyear, Avondale, & Litchfield Park AZ.</span>
+							<span class="text-h4">We are a locally owned pest control company that is proud to offer residential & commercial pest control services to the residents of Goodyear, Avondale, Litchfield Park & surrounding areas.</span>
 						</v-card-text>
 					</v-flex>
 				</v-layout>
