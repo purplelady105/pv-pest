@@ -43,7 +43,8 @@
     },
     "rules": {
       "vue/require-v-for-key": 0,
-      "no-mixed-spaces-and-tabs": 0
+      "no-mixed-spaces-and-tabs": 0,
+      "no-unused-vars": 0
     }
   },
   "browserslist": [
