@@ -31,17 +31,17 @@
 						</v-list-item-icon>
 						<v-list-item-title>Home</v-list-item-title>
 					</v-list-item>
-					<!-- <v-list-item to="/pay">
-						<v-list-item-icon>
-							<v-icon dense>fas fa-fw fa-dollar-sign</v-icon>
-						</v-list-item-icon>
-						<v-list-item-title>Pay</v-list-item-title>
-					</v-list-item> -->
 					<v-list-item to="/serviceAreas">
 						<v-list-item-icon>
 							<v-icon dense>fas fa-fw fa-map-marked-alt</v-icon>
 						</v-list-item-icon>
 						<v-list-item-title>Service Areas</v-list-item-title>
+					</v-list-item>
+					<v-list-item to="/pricing">
+						<v-list-item-icon>
+							<v-icon dense>fas fa-fw fa-dollar-sign</v-icon>
+						</v-list-item-icon>
+						<v-list-item-title>Pricing</v-list-item-title>
 					</v-list-item>
 					<v-list-item to="/about">
 						<v-list-item-icon>
@@ -49,12 +49,12 @@
 						</v-list-item-icon>
 						<v-list-item-title>About</v-list-item-title>
 					</v-list-item>
-					<v-list-item to="/contact">
+					<!-- <v-list-item to="/contact">
 						<v-list-item-icon>
 							<v-icon dense>far fa-fw fa-id-badge</v-icon>
 						</v-list-item-icon>
 						<v-list-item-title>Contact</v-list-item-title>
-					</v-list-item>
+					</v-list-item> -->
 				</v-list-item-group>
 			</v-list>
 		</v-navigation-drawer>
