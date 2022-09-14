@@ -1,39 +1,24 @@
 <template>
 	<div>
-		<v-row v-if="$mq != 'mobile'" class="text-left white--text mx-15 my-16">
-			<span style="font-size: 5em" class="font-weight-bold">Serving The West Valley & Maricopa County</span>
-			<span style="font-size: 4em" class="font-weight-bold mt-6">We Offer Guaranteed Year Round Residential Pest Protection</span>
+		<v-row v-if="$mq != 'mobile'" class="text-left primary--text mx-15 my-16">
+			<v-col cols="12" class="text-center">
+				<v-img :src="require('@/assets/logo-black.png')" alt="PV Pest Logo" width="300" class="mx-auto pa-3"></v-img>
+			</v-col>
+			<v-col cols="12" class="text-center">
+				<span style="font-size: 4em" class="font-weight-bold mt-0">Serving The West Valley & Maricopa County</span><br>
+				<span style="font-size: 3em" class="font-weight-bold mt-6">We Offer Guaranteed Year Round Residential Pest Protection</span>
+			</v-col>
 		</v-row>
-		<v-row v-else class="px-6 text-center white--text my-2">
-			<span style="font-size: 2.1em" class="font-weight-bold">Serving The West Valley & Maricopa County</span>
-			<span style="font-size: 2em" class="font-weight-bold mt-2">We Offer Guaranteed Year Round Residential Pest Protection</span>
+		<v-row v-else class="px-6 text-center primary--text my-2">
+			<v-col cols="12" class="text-center">
+				<v-img :src="require('@/assets/logo-black.png')" alt="PV Pest Logo" width="300" class="mx-auto pa-3"></v-img>
+			</v-col>
+			<span style="font-size: 2.1em;font-weight: 500">Serving The West Valley & Maricopa County</span>
+			<span style="font-size: 2em;font-weight: 400" class="mt-2">We Offer Guaranteed Year Round Residential Pest Protection</span>
 		</v-row>
-		<!-- ABOUT US SECTION -->
-		<v-row v-if="$mq != 'mobile'" class="mx-15 pt-16">
-			<v-card
-			 class="transparent my-16"
-			 flat>
-				<v-layout>
-					<v-flex xs6>
-						<v-img :src="require('@/assets/white-square-house.jpg')" max-height="50vh"></v-img>
-					</v-flex>
-					<v-flex xs6>
-						<v-card-title primary-title class="white--text pl-16">
-							<div>
-								<span class="text-h3">About Us</span>
-							</div>
-						</v-card-title>
-						<v-card-text class="white--text pl-16">
-							<span class="text-h4">We are a locally owned pest control company that is proud to offer residential & commercial pest control services to the residents of Goodyear, Avondale, Litchfield Park & surrounding areas.</span>
-						</v-card-text>
-					</v-flex>
-				</v-layout>
-			</v-card>
-		</v-row>
-		<MobileAbout v-else />
 		<!-- FIRST ROW OF PEST AVATARS -->
 		<v-row justify="space-around" class="pt-16 mt-16 mb-0 softGrey">
-			<span v-if="$mq === 'mobile'" class="text-h4 text-center pa-6 pt-0">Tap each image to view fun facts</span>
+			<!-- <span v-if="$mq === 'mobile'" class="text-h4 text-center pa-6 pt-0">Tap each image to view fun facts</span> -->
 			<v-avatar
 			 size="300" class="mb-6"
 			 @click="openTriviaDialog(0)">
@@ -68,6 +53,29 @@
 				<v-img :src="require('@/assets/spider.jpg')"></v-img>
 			</v-avatar>
 		</v-row>
+		<!-- ABOUT US SECTION -->
+		<v-row v-if="$mq != 'mobile'" class="mx-15 pt-5">
+			<v-card
+			 class="transparent my-16"
+			 flat>
+				<v-layout>
+					<v-flex xs6>
+						<v-img :src="require('@/assets/white-square-house.jpg')" max-height="50vh"></v-img>
+					</v-flex>
+					<v-flex xs6>
+						<v-card-title primary-title class="primary--text pl-16">
+							<div>
+								<span class="text-h3">About Us</span>
+							</div>
+						</v-card-title>
+						<v-card-text class="primary--text pl-16">
+							<span class="text-h4">We are a locally owned pest control company that is proud to offer residential & commercial pest control services to the residents of Goodyear, Avondale, Litchfield Park & surrounding areas.</span>
+						</v-card-text>
+					</v-flex>
+				</v-layout>
+			</v-card>
+		</v-row>
+		<MobileAbout v-else />
 		<!-- CUSTOMER TESTIMONIALS -->
 		<v-row v-if="$mq != 'mobile'" class="mx-15">
 			<v-card
@@ -75,7 +83,7 @@
 			 flat>
 				<v-layout>
 					<v-flex xs6>
-						<v-card-text class="white--text">
+						<v-card-text class="primary--text">
 							<div>
 								<span class="text-h4 text-wrap">"We are so happy with PV Pest Solutions! Their commitment to providing outstanding customer service is unmatched."</span>
 							</div>
@@ -83,7 +91,7 @@
 						</v-card-text>
 					</v-flex>
 					<v-flex xs6>
-						<v-card-text class="white--text">
+						<v-card-text class="primary--text">
 							<div>
 								<span class="text-h4">"Excellent service. Our technician Joe was very thorough and made sure all of our concerns were addressed. Would highly recommend."</span>
 							</div>
@@ -99,7 +107,7 @@
 			 flat>
 				<v-layout>
 					<v-flex xs12>
-						<v-card-text class="white--text text-center">
+						<v-card-text class="primary--text text-center">
 							<div>
 								<span class="text-h4 text-wrap">"We are so happy with PV Pest Solutions! Their commitment to providing outstanding customer service is unmatched."</span>
 							</div>

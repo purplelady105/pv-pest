@@ -11,10 +11,10 @@
 				</v-layout>
 				<v-layout>
 					<v-flex xs12>
-						<v-card-title primary-title class="white--text">
+						<v-card-title primary-title class="primary--text">
 							<span style="font-size: 2em" class="font-weight-bold mx-auto">About Us</span>
 						</v-card-title>
-						<v-card-text class="white--text text-center px-6">
+						<v-card-text class="primary--text text-center px-6">
 							<span class="text-h4">We are a locally owned pest control company that is proud to offer residential & commercial pest control services to the residents of Goodyear, Avondale, Litchfield Park & surrounding areas.</span>
 						</v-card-text>
 					</v-flex>

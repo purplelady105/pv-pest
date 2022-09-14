@@ -1,7 +1,8 @@
 <template>
 	<div class="mt-0 mb-16">
-		<v-card flat tile width="100%" class="transparent white--text text-center">
-			<div class="text-h2 font-weight-bold py-6">Service Areas</div>
+		<v-card flat tile width="100%" class="transparent primary--text text-center">
+			<div v-if="$mq != 'mobile'" class="text-h2 font-weight-bold py-6">Service Areas</div>
+			<div v-else class="text-h4 font-weight-bold py-4">Service Areas</div>
 		</v-card>
 		<v-row v-if="$mq != 'mobile'" class="mx-15">
 			<v-card
@@ -12,7 +13,7 @@
 						<v-img :src="require('@/assets/desert.jpg')" max-height="50vh"></v-img>
 					</v-flex>
 					<v-flex xs6>
-						<v-card-text class="white--text pl-16">
+						<v-card-text class="primary--text pl-16">
 							<div class="text-h5 px-2 pb-4 ">
 								We serve the following cities: Surprise, Buckeye, Goodyear, Litchfield Park, Tolleson, and Avondale.
 							</div>
@@ -32,7 +33,7 @@
 				</v-layout>
 				<v-layout>
 					<v-flex xs12>
-						<v-card-text class="white--text">
+						<v-card-text class="primary--text">
 							<div class="text-h5 text-center px-2 pb-4 ">
 								We serve the following cities: Surprise, Buckeye, Goodyear, Litchfield Park, Tolleson, and Avondale.
 							</div>

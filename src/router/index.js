@@ -5,42 +5,47 @@ import Home from '../views/Home.vue'
 Vue.use(VueRouter)
 
 const routes = [{
-        path: '/',
-        name: 'Home',
-        component: Home
-    },
-    {
-        path: '/about',
-        name: 'About',
-        // route level code-splitting
-        // this generates a separate chunk (about.[hash].js) for this route
-        // which is lazy-loaded when the route is visited.
-        component: () => import( /* webpackChunkName: "about" */ '../views/About.vue')
-    },
-    {
-        path: '/pay',
-        name: 'Pay',
-        component: () => import( /* webpackChunkName: "pay" */ '../views/Pay.vue')
-    },
-    {
-        path: '/serviceAreas',
-        name: 'ServiceAreas',
-        component: () => import( /* webpackChunkName: "serviceAreas" */ '../views/ServiceAreas.vue')
-    },
-    {
-        path: '/contact',
-        name: 'Contact',
-        component: () => import( /* webpackChunkName: "contact" */ '../views/Contact.vue')
-    }
+		path: '/',
+		name: 'Home',
+		component: Home
+	},
+	{
+		path: '/about',
+		name: 'About',
+		// route level code-splitting
+		// this generates a separate chunk (about.[hash].js) for this route
+		// which is lazy-loaded when the route is visited.
+		component: () => import( /* webpackChunkName: "about" */ '../views/About.vue')
+	},
+	{
+		path: '/pay',
+		name: 'Pay',
+		component: () => import( /* webpackChunkName: "pay" */ '../views/Pay.vue')
+	},
+	{
+		path: '/serviceAreas',
+		name: 'ServiceAreas',
+		component: () => import( /* webpackChunkName: "serviceAreas" */ '../views/ServiceAreas.vue')
+	},
+	{
+		path: '/pricing',
+		name: 'Pricing',
+		component: () => import( /* webpackChunkName: "serviceAreas" */ '../views/Pricing.vue')
+	},
+	{
+		path: '/contact',
+		name: 'Contact',
+		component: () => import( /* webpackChunkName: "contact" */ '../views/Contact.vue')
+	}
 ]
 
 const router = new VueRouter({
-    mode: 'history',
-    base: process.env.BASE_URL,
-    routes,
-    scrollBehavior(to, from, savedPosition) {
-        return { x: 0, y: 0 }
-    }
+	mode: 'history',
+	base: process.env.BASE_URL,
+	routes,
+	scrollBehavior(to, from, savedPosition) {
+		return { x: 0, y: 0 }
+	}
 })
 
 export default router
