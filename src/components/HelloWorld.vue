@@ -17,9 +17,9 @@
 			<span style="font-size: 2em;font-weight: 400" class="mt-2">We Offer Guaranteed Year Round Residential Pest Protection</span>
 		</v-row>
 		<!-- FIRST ROW OF PEST AVATARS -->
-		<v-row justify="space-around" class="pt-16 mt-16 mb-0 softGrey">
+		<!-- <v-row justify="space-around" class="pt-16 mt-16 mb-0 softGrey"> -->
 			<!-- <span v-if="$mq === 'mobile'" class="text-h4 text-center pa-6 pt-0">Tap each image to view fun facts</span> -->
-			<v-avatar
+			<!-- <v-avatar
 			 size="300" class="mb-6"
 			 @click="openTriviaDialog(0)">
 				<v-img :src="require('@/assets/ants-300x300.jpg')"></v-img>
@@ -34,9 +34,9 @@
 			 @click="openTriviaDialog(2)">
 				<v-img :src="require('@/assets/black-widow.jpg')"></v-img>
 			</v-avatar>
-		</v-row>
+		</v-row> -->
 		<!-- SECOND ROW OF PEST AVATARS -->
-		<v-row justify="space-around" class="pb-16 mt-0 mb-16 softGrey">
+		<!-- <v-row justify="space-around" class="pb-16 mt-0 mb-16 softGrey">
 			<v-avatar
 			 size="300" class="mb-6"
 			 @click="openTriviaDialog(3)">
@@ -52,7 +52,7 @@
 			 @click="openTriviaDialog(5)">
 				<v-img :src="require('@/assets/spider.jpg')"></v-img>
 			</v-avatar>
-		</v-row>
+		</v-row> -->
 		<!-- ABOUT US SECTION -->
 		<v-row v-if="$mq != 'mobile'" class="mx-15 pt-5">
 			<v-card
